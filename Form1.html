@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Форма</title>
+    </head>
+    <body>
+        <h3 align="center">Данные пользователя</h3>
+        <form action="#" method="POST" autocomplete="">
+            <fieldset>  
+                <legend></legend>
+                <p>
+                    <label for="text">Фамилия</label>
+                    <input id="text" type="text" required="">
+                </p>
+                <p>
+                    <label for="text">Имя</label>
+                    <input id="text" type="text" required="">
+                </p>
+                <p>
+                    <label for="text">Отчество</label>
+                    <input id="text" type="text" required="">
+                </p>
+                <p>
+                    <label for="date">Дата Рождения</label>
+                    <input id="date" min="1900-01-01" type="date" required="">
+                </p>
+                <p>
+                    <label for="text">Профессия<label>
+                    <input id="text" type="text">
+                </p>
+                <p>
+                    <label for="date">Опыт (в годах)</label>
+                    <input id="number" min="1" type="number">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Кол-во членов семьи</legend>
+                <p>
+                    <label><input name="answer" type="radio">1</label>
+                    <label><input name="answer" type="radio">2</label>
+                    <label><input name="answer" type="radio">3</label>
+                    <label><input name="answer" type="radio">более 3</label>
+                </p>
+            </fieldset>
+            <fieldset>
+		        <legend>Описание жизни</legend>
+			    <p>
+				    <textarea cols="30" rows="15"
+					          autofocus required
+					          placeholder="ввести минимум 1000 символов"></textarea>
+			    </p>
+            </fieldset>
+            <fieldset>
+                <legend>Дальнейшие действия</legend>
+                <p>
+                    <input type="submit" Value="Отправить"> 
+                </p>
+                <p>
+                    <input type="reset"
+                           value="Очистить и начать заново">
+                </p>
+            </fieldset>
+        </form>        
+    </body>
+</html>
